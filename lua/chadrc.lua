@@ -14,6 +14,11 @@ M.base46 = {
 	-- },
 }
 
+M.ui = {
+  tabufline = {
+    order = { "buffers", "tabs", "btns", "treeOffset" }
+  }
+}
 -- M.nvdash = { load_on_startup = true }
 -- M.ui = {
 --       tabufline = {

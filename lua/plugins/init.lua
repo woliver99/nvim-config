@@ -7,14 +7,6 @@ return {
 
   -- These are some examples, uncomment them if you want to see them work!
   {
-    "dundalek/lazy-lsp.nvim",
-    dependencies = { "neovim/nvim-lspconfig" },
-    config = function()
-      require("lazy-lsp").setup {}
-    end
-  },
-
-  {
     "neovim/nvim-lspconfig",
     config = function()
       require "configs.lspconfig"

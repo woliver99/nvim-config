@@ -7,6 +7,13 @@ local map = vim.keymap.set
 map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>")
 
+map({ "n", "v" }, "=", function()
+  require("conform").format({
+    async = true,
+    lsp_fallback = true, -- Set to false to ensure ONLY conform formatters are used
+  })
+end, { desc = "Format with conform.nvim" })
+
 -- visual mode
 
 map("v", "c", '"+y', { desc = "Copy to system clipboard" })

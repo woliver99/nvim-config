@@ -3,7 +3,8 @@ require("nvchad.configs.lspconfig").defaults()
 local servers = {
   "lua_ls",
   "nixd",
-  "clangd"
+  "clangd",
+  "rust_analyzer"
 }
 
 
